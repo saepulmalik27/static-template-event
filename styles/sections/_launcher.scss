@@ -1,0 +1,26 @@
+.launcher{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    @include media-max-width($mobile-breakpoint) {
+        flex-direction: column;
+    }
+
+    &_item{
+        flex: 1 1 50%;
+    }
+
+    &_item__right{
+       display: flex;
+       justify-content: flex-end;
+       align-items: center;
+    }
+
+
+    &_illu{
+        max-width: 500px;
+        width: 100%;
+    }
+}

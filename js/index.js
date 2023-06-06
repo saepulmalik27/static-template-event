@@ -1,4 +1,3 @@
-
 /**
  * ========================================
  * @define {Method}
@@ -19,8 +18,6 @@ const handleClickSidebar = () => {
   sidebar.classList.add("hidden");
 };
 
-
-
 document.addEventListener("DOMContentLoaded", (e) => {
   /**
    * ========================================
@@ -29,11 +26,40 @@ document.addEventListener("DOMContentLoaded", (e) => {
    */
   humberger.addEventListener("click", handleClickHumberger);
   sidebar.addEventListener("click", handleClickSidebar);
-  const disclosureButtons = document.querySelectorAll('.disclosure_button');
+  const disclosureButtons = document.querySelectorAll(".disclosure_button");
   disclosureButtons.forEach((button) => {
     const id = button.id.replace("disclosure_button", "");
-    button.addEventListener('click', () => {
+    button.addEventListener("click", () => {
       toggleDisclosurePanel(id);
+    });
+  });
+
+  latarvirtualButton.addEventListener("click", () => {
+    window.open(
+      "https://drive.google.com/drive/folders/1HmVUkcI1JfKN7IoflqOKsgOv0I9jUy-R?usp=sharing"
+    );
+  });
+
+  const smoothScrollLinks = document.querySelectorAll(".smooth-scroll");
+
+  // Add event listeners to handle smooth scrolling
+  smoothScrollLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault(); // Prevent default link behavior
+
+      const targetId = link.getAttribute("href"); // Get the target element's ID
+      const targetElement = document.querySelector(targetId); // Select the target element
+
+      if (targetElement) {
+        // Calculate the target element's position relative to the viewport
+        const targetOffset = targetElement.getBoundingClientRect().top;
+
+        // Smoothly scroll to the target element using scrollIntoView
+        window.scrollTo({
+          top: window.pageYOffset + targetOffset,
+          behavior: "smooth",
+        });
+      }
     });
   });
 });

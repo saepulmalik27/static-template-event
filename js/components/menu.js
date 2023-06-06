@@ -9,7 +9,7 @@ const menulistComponent = (id) => {
       id === enumLabel.sidebar && "menu-list--column"
     } " id="menu-${id}">
         ${menuData
-          .map((item) => `<li><a href="${item.url}">${item.label}</a></li>`)
+          .map((item) => `<li><a class="smooth-scroll" href="${item.url}">${item.label}</a></li>`)
           .join("")}
         </ul>`;
   };

@@ -9,6 +9,7 @@
     &--active {
         @include media-max-width($initial-responsive-breakpoint) {
             position: fixed;
+            z-index: 1;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;

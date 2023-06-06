@@ -1,0 +1,44 @@
+.button{
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    // box-shadow: 3px 8px 25px rgba(251, 251, 251, 0.26);
+    overflow: hidden;
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    padding: 0.5rem 1rem;
+    width: fit-content;
+    &_secondary{
+        background-color: $secondary;
+        color: white;
+    }
+    &_primary{
+        background-color: $primary;
+        color: $secondary;
+        border: 1px solid $secondary;
+    }
+
+    @include media-max-width($mobile-breakpoint){
+        font-size: 1.6rem;
+    }
+
+    &_lg { 
+        padding: 1.25rem 3.75rem; 
+
+        @include media-max-width($tablet-breakpoint) {
+            padding: 0.81rem 3rem; 
+            font-size: 1.6rem;
+        }
+    }
+    &_xsm{
+        padding: .55rem 0.75rem; 
+        font-size: 1.6rem;
+    }
+
+    &_sm { 
+        padding: .81rem 3.75rem; 
+    }
+
+}

@@ -11,3 +11,4 @@ const menu = document.querySelector(`#${enumLabel.menu}`);
 const header = document.querySelector(`#${enumLabel.header}`);
 const sectionFaq = document.querySelector(`#${enumLabel.section+"-"+enumLabel.faq}`);
 const faqContent = document.querySelector(`#${enumLabel.faq+"_"+enumLabel.content}`);
+const latarvirtualButton = document.querySelector(`#section-latarvirtual-action`);

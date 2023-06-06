@@ -7,11 +7,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- 
-        =========================
-        Header
-        =========================
-     -->
+    <!-- HEADER START-->
     <header class="header" id="header">
       <!-- logo -->
       <div>
@@ -34,40 +30,119 @@
         <nav class="menu menu-column hidden" id="sidebar"></nav>
       </div>
     </header>
-    <!-- 
-        =========================
-        END of Header
-        =========================
-     -->
+    <!-- END OF HEADER-->
 
-    <!-- 
-        =========================
-        Main
-        =========================
-     -->
+    <!-- Main START-->
     <main>
+      <!-- Section Hero -->
+      <section class="section launcher bg_hero " id="section-hero">
+        <div class="launcher_item">
+          <img class="launcher_illu"
+            src="https://cdn.inspigo.id/public/mlc/V22/logo.png"
+            alt="logo_mlc"
+          />
+          <div class="text-white flex flex-col gap-2">
+            <p>#GerakanBersamaMandirian </p>
+            <div class="flex">
+              <img
+                src="https://ik.imagekit.io/saepulmalik/a_mlc2022/instagram_pZQP6UUOY.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1650417413078"
+              />
+              <a
+                class="link"
+                href="https://instagram.com/lifeatmandiri?igshid=YmMyMTA2M2Y="
+                target="_blank"
+                >&nbsp; @lifeatmandiri</a
+              >
+            </div>
+            <div class="flex">
+              <img
+                src="https://ik.imagekit.io/saepulmalik/a_mlc2022/youtube_yv_ZYVOsU.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1650417413376"
+              />
+              <a
+                class="link"
+                href="https://www.youtube.com/channel/UCVhliuGdJo0NOnv1JhbvAKw"
+                target="_blank"
+                >&nbsp;Mandiri Learning Carnival</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="launcher_item launcher_item__right">
+          <img
+            class="launcher_illu"
+            src="https://cdn.inspigo.id/public/mlc/V22/hero.png"
+            alt="hero_asset"
+          />
+        </div>
+      </section>
+      <!-- End of Section Hero -->
+      <!-- Section Latar virtual -->
+      <section class="section launcher" id="section-latarvirtual">
+        <div class="card launcher_item">
+          <h1 class="card_title text-white">Latar Virtual</h1>
+          <div class="card_body">
+            <p class="card_desc text-white">
+              Ayo unduh latar virtual ini dan jangan lupa untuk memakainya
+              selama acara Mandiri Learning Carnival 2022
+            </p>
+            <button
+              class="button button_secondary"
+              id="section-latarvirtual-action"
+            >
+              Unduh
+            </button>
+          </div>
+        </div>
+        <div class="launcher_item launcher_item__right">
+          <img
+            class="launcher_illu"
+            src="https://cdn.inspigo.id/public/mlc/V22/vb.png"
+            alt="latarvirtual"
+          />
+        </div>
+      </section>
+      <!-- End of Section Latar virtual -->
+
+      <!-- Section Photobooth -->
+      <section class="section photobooth" id="section-photobooth">
+        <div class="photobooth_title">
+          <h1 class="text-white text-center">Berikan Senyum Terbaikmu</h1>
+          <h4 class="text-white text-center">Ayo Coba Foto Virtual Ini</h4>
+        </div>
+        <div class="photobooth_content">
+          <a href="https://app.virtualbooth.me/booth/kdXA9QLq" target="_blank">
+            <img
+              class="photobooth_content__illu"
+              src="https://cdn.inspigo.id/public/mlc/photobooth.webp"
+              alt="photobooth1"
+            />
+          </a>
+          <a href="https://app.virtualbooth.me/booth/kdXA9QLq" target="_blank">
+            <img
+              class="photobooth_content__illu"
+              src="https://cdn.inspigo.id/public/mlc/photobooth2.webp"
+              alt="photobooth2"
+            />
+          </a>
+        </div>
+      </section>
+      <!-- end of section photobooth -->
+
+      <!-- Section Faq -->
       <section class="section section-faq" id="section-faq">
         <h1 id="faq_title" class="section-faq_title text-white">
           Pertanyaan yang sering diajukan
         </h1>
-        <div id="faq_content">  
-        </div>
+        <div id="faq_content"></div>
       </section>
     </main>
-    <!-- 
-        =========================
-        END of Main
-        =========================
-     -->
+    <!-- END OF MAIN-->
 
-    <!-- 
-        =========================
-        Footer
-        =========================
-     -->
+    <!-- FOOTER START -->
     <footer class="footer text-white">
       &copy; 2022 Mandiri Learning Carnival
     </footer>
+    <!-- FOOTER END -->
     <script src="js/data.js"></script>
     <script src="js/enum.js"></script>
     <script src="js/components/menu.js"></script>
