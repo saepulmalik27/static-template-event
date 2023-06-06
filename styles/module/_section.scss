@@ -1,0 +1,11 @@
+.section{
+    max-width: 1440px;
+    width: 100%;
+    padding: 2rem;
+    @media (min-width: 1440px){
+        margin : 0 auto;
+    }
+    @include media-min-width($mobile-breakpoint) {
+        justify-content: flex-start;
+    }
+}

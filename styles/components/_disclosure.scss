@@ -1,0 +1,108 @@
+.disclosure {
+    background: white;
+    // opacity: 0.8;
+    box-shadow: 4px 8px 30px rgba(89, 79, 224, 0.05);
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    padding: 2.25rem;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    // border: 1px solid $stroke;
+
+    @include media-max-width($mobile-breakpoint) {
+        padding: 1.5rem;
+    }
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    &_button {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        font-size: 20px;
+
+        &__label {
+            margin-bottom: 0;
+            margin-right: 2rem;
+            display: flex;
+            color: #282828;
+            & > *:not(:last-child) {
+                margin-right: 0.5rem;
+            }
+        }
+
+        &__icon {
+            flex-shrink: 0;
+            transition: all 0.2s;
+            width: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 4px;
+            
+            img{
+                aspect-ratio: 1/1;
+                width: 100%;
+                height :auto
+            }
+
+            @include media-max-width($mobile-breakpoint) {
+                width: 20px;
+            }
+
+            &.active {
+                transform: rotate(-180deg);
+            }
+        }
+    }
+
+    &_panel {
+        height: auto;
+        display: none;
+        color: #282828;
+        font-size: 16px;
+
+        &.show {
+            // margin-top: 1.75rem;
+            display: flex;
+        }
+
+        li {
+            position: relative;
+            list-style: none;
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+
+            &::before {
+                content: '';
+                display: inline-block;
+                position: absolute;
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                background-color: #282828;
+                top: 0.8rem;
+                left: 0;
+
+                @include media-max-width($mobile-breakpoint) {
+                    top: 0.6rem;
+                }
+            }
+        }
+
+        a {
+            font-family: inherit;
+            font-size: inherit;
+            color: white;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

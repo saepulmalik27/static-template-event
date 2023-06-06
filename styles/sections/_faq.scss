@@ -1,0 +1,16 @@
+.section-faq{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+
+    &_title{
+        @include media-min-width($mobile-breakpoint) {
+            text-align: center;
+        }
+    }
+
+    &_content{
+        width: 100%;
+    }
+}

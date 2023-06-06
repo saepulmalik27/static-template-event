@@ -1,0 +1,12 @@
+{
+  "name": "mlc-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "compile" : "sass --style=compressed --watch styles/main.scss:css/style.css"
+  },
+  "devDependencies": {
+    "sass": "^1.62.1"
+  }
+}

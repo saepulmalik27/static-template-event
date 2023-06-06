@@ -1,0 +1,79 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mandiri Learning Carnival</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- 
+        =========================
+        Header
+        =========================
+     -->
+    <header class="header" id="header">
+      <!-- logo -->
+      <div>
+        <img src="assets/icon/logo_mlc.svg" alt="logo" />
+      </div>
+
+      <!-- menu -->
+      <nav class="navbar-container" id="navbar-container">
+        <div class="menu" id="navbar"></div>
+      </nav>
+
+      <div class="sidebar-container">
+        <!-- humberger -->
+        <div class="humberger" id="humberger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!-- sidebar -->
+        <nav class="menu menu-column hidden" id="sidebar"></nav>
+      </div>
+    </header>
+    <!-- 
+        =========================
+        END of Header
+        =========================
+     -->
+
+    <!-- 
+        =========================
+        Main
+        =========================
+     -->
+    <main>
+      <section class="section section-faq" id="section-faq">
+        <h1 id="faq_title" class="section-faq_title text-white">
+          Pertanyaan yang sering diajukan
+        </h1>
+        <div id="faq_content">  
+        </div>
+      </section>
+    </main>
+    <!-- 
+        =========================
+        END of Main
+        =========================
+     -->
+
+    <!-- 
+        =========================
+        Footer
+        =========================
+     -->
+    <footer class="footer text-white">
+      &copy; 2022 Mandiri Learning Carnival
+    </footer>
+    <script src="js/data.js"></script>
+    <script src="js/enum.js"></script>
+    <script src="js/components/menu.js"></script>
+    <script src="js/components/disclosure.js"></script>
+    <script src="js/query-selector.js"></script>
+    <script src="js/render-component.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
