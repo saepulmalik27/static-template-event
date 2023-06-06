@@ -26,6 +26,20 @@ document.addEventListener("DOMContentLoaded", (e) => {
    */
   humberger.addEventListener("click", handleClickHumberger);
   sidebar.addEventListener("click", handleClickSidebar);
+  latarvirtualButton.addEventListener("click", () => {
+    window.open(
+      "https://drive.google.com/drive/folders/1HmVUkcI1JfKN7IoflqOKsgOv0I9jUy-R?usp=sharing"
+    );
+  });
+  photoboothButton.addEventListener("click", () => {
+    window.open(photoboothUrl);
+  })
+  /**
+   * ========================================
+   * @func disclosure logic
+   * ========================================
+   */
+
   const disclosureButtons = document.querySelectorAll(".disclosure_button");
   disclosureButtons.forEach((button) => {
     const id = button.id.replace("disclosure_button", "");
@@ -34,14 +48,12 @@ document.addEventListener("DOMContentLoaded", (e) => {
     });
   });
 
-  latarvirtualButton.addEventListener("click", () => {
-    window.open(
-      "https://drive.google.com/drive/folders/1HmVUkcI1JfKN7IoflqOKsgOv0I9jUy-R?usp=sharing"
-    );
-  });
-
+  /**
+   * ========================================
+   * @func smooth-scroll
+   * ========================================
+   */
   const smoothScrollLinks = document.querySelectorAll(".smooth-scroll");
-
   // Add event listeners to handle smooth scrolling
   smoothScrollLinks.forEach((link) => {
     link.addEventListener("click", (event) => {

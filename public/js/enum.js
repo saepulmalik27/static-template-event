@@ -14,3 +14,10 @@ const enumLabel = {
     section : "section",
     content : "content",
   };
+
+  /**
+   * ========================================
+   * @define {Global Variable}
+   * ========================================
+   */
+  const photoboothUrl = "https://app.virtualbooth.me/booth/kdXA9QLq"
