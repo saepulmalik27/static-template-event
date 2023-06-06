@@ -29,5 +29,11 @@ document.addEventListener("DOMContentLoaded", (e) => {
    */
   humberger.addEventListener("click", handleClickHumberger);
   sidebar.addEventListener("click", handleClickSidebar);
-    
+  const disclosureButtons = document.querySelectorAll('.disclosure_button');
+  disclosureButtons.forEach((button) => {
+    const id = button.id.replace("disclosure_button", "");
+    button.addEventListener('click', () => {
+      toggleDisclosurePanel(id);
+    });
+  });
 });
